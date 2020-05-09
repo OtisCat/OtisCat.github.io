@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;1,531&display=swap')
+
+*
+  font-family: 'Jost', sans-serif
+  color: white
+  scroll-behavior: smooth
+  outline: none
+  box-sizing: border-box
+  // image-rendering: auto
+  // image-rendering: smooth
+
+  &::-webkit-scrollbar
+    display: none
+
+  &::selection
+    background: #0394FC
+
+img
+  -webkit-transform: scale(0.999)
+  transform: scale(0.999)
+  // background: white
+
+p
+  line-height: 1.4
+
+.t
+  height: 1px
+
+a
+  display: inline-block
+  border-bottom: 2px solid #0394FC
+  text-decoration: none
+  color: #0394FC
+  transition: border 0.2s, padding 0.2s
+  padding-bottom: 5px
+  margin-bottom: 0px
+  font-weight: 900
+  text-rendering: geometricPrecision
+
+  &:hover
+    border-bottom: 5px solid #0394FC
+    padding-bottom: 2px
+
+h1
+  font-weight: 900
+  display: inline-block
+  border-bottom: 5px solid #0394FC
+
+.topbar
+  position: fixed
+  left: 0px
+  right: 0px
+  top: 0px
+  height: 10vh
+  z-index: 999
+  width: 100%
+  background: linear-gradient(180deg, rgba(51,51,51,1) 75%, rgba(51,51,51,0.7133228291316527) 93%, rgba(51,51,51,0) 100%)
+
+  .menuItem
+    font-size: 2vw
+    text-decoration: none
+    font-weight: 200
+    font-style: italic
+    padding: 1vw 2vw
+    display: inline-block
+    height: 10vh
+    border: none
+    color: white
+
+  .right
+    float: right
+
+.body
+  position: absolute
+  left: 0px
+  right: 0px
+  top: 0px
+  bottom: 0px
+  overflow: scroll
+  margin: 0px
+  padding: 0px
+  scroll-snap-type: y mandatory
+
+  .section
+    width: 100vw
+    height: 100vh
+    background: #333
+    position: relative
+    scroll-snap-align: start
+
+    .content
+      position: absolute
+      width: 25vw
+      right: 15vw
+      height: 20vh
+      top: 25vh
+      font-size: 2vw
+
+      .img1
+        position: absolute
+        top: 0vw
+        width: 30vw
+        left: -10vw
+        border-radius: 1vw
+
+      .img2
+        position: absolute
+        top: 10vw
+        width: 25vw
+        left: 0vw
+        border-radius: 1vw
+
+    .title
+      position: absolute
+      width: 25vw
+      left: 15vw
+      height: 20vh
+      top: 15vh
+      font-size: 2vw
