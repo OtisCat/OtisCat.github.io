@@ -31,6 +31,7 @@ a {
   margin-bottom: 0px;
   font-weight: 900;
   text-rendering: geometricPrecision;
+  font-style: normal;
 }
 a:hover {
   border-bottom: 5px solid #0394FC;
