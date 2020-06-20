@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Crasher</title>
+    <link rel="stylesheet" href="/projects/crasher/style.css">
+  </head>
+  <body>
+    <script>
+
+      function crash() {
+
+        document.getElementById("button").className = "loading";
+
+        setTimeout(function () {
+
+          while(true) {
+
+            console.log("CRASH!!!");
+
+          }
+
+        }, 200);
+
+      }
+
+    </script>
+    <h1>Crash My Browser!</h1>
+
+    <button id="button" class='' onclick="crash()">Crash!</button>
+  </body>
+</html>

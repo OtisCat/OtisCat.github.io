@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap')
+
+*
+  font-family: 'Roboto Slab', serif
+
+h1
+  position: fixed
+  left: 30vw
+  width: 40vw
+  top: 10vh
+  font-size: 6vh
+  text-align: center
+  color: black
+
+button
+  position: fixed
+  bottom: 10vh
+  width: 40vw
+  left: 30vw
+  padding: 4vh
+  font-size: 3vh
+  background: #32a852
+  border: 2px solid #1c8538
+  border-radius: 5px
+  color: white
+
+.loading
+  animation: move 2s linear infinite
+
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent)
+    z-index: 1
+    background-size: 50px 50px
+    animation: move 2s linear infinite
+    overflow: hidden
+
+@keyframes move
+  0%
+    background-position: 0 0
+  100%
+    background-position: 50px 50px
