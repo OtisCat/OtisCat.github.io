@@ -7,10 +7,13 @@
     <link rel="icon" type="image/png" href="/favicon.png">
   </head>
   <body onload="scrollToTop()">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98922061-4"></script>
     <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-98922061-4');
 
-    </script>
-    <script>
       function scrollToTop() {
           window.scrollTo(0, 0);
           console.log("Hi");
