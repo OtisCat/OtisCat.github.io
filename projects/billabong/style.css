@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 * {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   outline: none;
 }
 
@@ -27,17 +27,21 @@
   padding: 4vh;
   max-height: 15vh;
 }
+
 .matchButton:hover {
   cursor: pointer;
   background: #ff6d2e;
 }
+
 .matchButton:active {
   background: #de591f;
 }
 
 .loading {
-  animation: move 2s linear infinite;
+  -webkit-animation: move 2s linear infinite;
+          animation: move 2s linear infinite;
 }
+
 .loading::after {
   content: "";
   position: absolute;
@@ -48,7 +52,8 @@
   background: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
   z-index: 1;
   background-size: 50px 50px;
-  animation: move 2s linear infinite;
+  -webkit-animation: move 2s linear infinite;
+          animation: move 2s linear infinite;
   overflow: hidden;
 }
 
@@ -113,18 +118,21 @@
   height: 80vh;
   z-index: 15;
 }
+
 .result h2 {
   text-align: center;
   padding-top: 5vh;
   font-size: 5vh;
   color: #555;
 }
+
 .result h1 {
   text-align: center;
   padding-top: 0vh;
   font-size: 10vh;
   color: #333;
 }
+
 .result .close {
   position: absolute;
   top: 10px;
@@ -132,9 +140,19 @@
   border: none;
   background: inherit;
 }
+
 .result .close:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+@-webkit-keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
 }
 
 @keyframes move {
@@ -145,5 +163,4 @@
     background-position: 50px 50px;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

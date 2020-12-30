@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 * {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 h3 {
@@ -49,5 +49,4 @@ canvas {
   padding: 2vh;
   font-size: 3vh;
 }
-
 /*# sourceMappingURL=style.css.map */

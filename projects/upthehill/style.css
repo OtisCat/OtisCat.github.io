@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap");
 * {
-  font-family: "Roboto Mono", monospace;
-  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -ms-overflow-style: none;
   scrollbar-width: none;
   padding: 0vw;
   margin: 0vw;
 }
+
 *::-webkit-scrollbar {
   display: none;
 }
@@ -37,7 +39,8 @@ a {
   scroll-behavior: smooth;
   padding: 0px;
   margin: 0px;
-  scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 
 .section {
@@ -80,10 +83,12 @@ a {
   top: 30vh;
   white-space: nowrap;
   height: 25vw;
-  scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
   overflow-x: scroll;
   overflow-y: hidden;
 }
+
 .songs .song {
   position: relative;
   display: inline-block;
@@ -99,6 +104,7 @@ a {
   top: 30vh;
   height: 25vw;
 }
+
 .bios .bio {
   display: inline-block;
   width: 30vw;
@@ -108,6 +114,7 @@ a {
   border-radius: 5px;
   position: relative;
 }
+
 .bios .bio img {
   position: absolute;
   top: 2vw;
@@ -118,12 +125,14 @@ a {
   height: 8vw;
   border-radius: 50%;
 }
+
 .bios .bio h2 {
   position: absolute;
   top: 12vw;
   left: 2vw;
   font-size: 1.4vw;
 }
+
 .bios .bio p {
   position: absolute;
   top: 14vw;
@@ -164,5 +173,4 @@ a {
   width: 10vw;
   text-align: right;
 }
-
 /*# sourceMappingURL=style.css.map */
