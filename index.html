@@ -19,6 +19,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://william-mcgonagle.github.io/" />
     <meta property="og:image" content="https://william-mcgonagle.github.io/images/1.webp" />
+    <script src="/script.js"></script>
 </head>
 <nav>
     <a href="#home">
@@ -51,7 +52,10 @@
 </nav>
 <body>
     <div class="frontpage" id="home">
-        <h1>Hi, I'm William.</h1>
+        <h1>Hi, I'm <b>William McGonagle</b></h1>
+        <h3 class="typewrite" data-period="1500" data-type='[ "Full Stack Engineer", "Programming Enthusiast", "Game Developer" ]'>
+            <span class="wrap"></span>
+        </h3>
         <a href="/#work">Check Out My Work</a>
         <div></div>
     </div>
@@ -62,15 +66,15 @@
         </div>
         <div id="medium-widget"></div>
         <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-        <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@william-mcgonagle","postsPerLine":2,"limit":2,"picture":"none","fields":["description","publishAt"],"ratio":"original"}})</script>
-
+        <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@william-mcgonagle","postsPerLine":3,"limit":9,"picture":"big","fields":["description","publishAt"],"ratio":"square"}})</script>
+    
     </div>
     <div class="work" id="work">
         <div class="header">
             <h1>my work</h1>
         </div>
         <div class="grid">
-            <a href="https://github.com/william-mcgonagle/">
+            <a href="https://github.com/William-McGonagle/nuugadag">
                 <img src="/images/projects/open-bender.webp" alt="" style="background: #1E1E23">
                 <h3>Open Bender</h3>
                 <p></p>
@@ -85,7 +89,7 @@
                 <h3>Crash My Browser</h3>
                 <p>"Crash My Browser" was made during the same competition as Billabung. It was done in an attempt to build a consistent User Interface style. The premise of the app is that the user can press a button, and if they do so, the web browser will crash.</p>
             </a>
-            <a href="/projects/gazLaxe/">
+            <a href="https://github.com/William-McGonagle/gazLaxe">
                 <img style="background: #DDE4FD" src="/images/projects/gazLaxe.webp" alt="">
                 <h3>GazLaxe</h3>
                 <p>GazLaxe is a tool that gives everyday users the power of hackers. It was inspired by the Steve Jobs quote, "What if, instead of being in the right hands, it was in all the hands." In its current state, it allows users to perform SSH and FTP connections. It is open source, and no longer under active development due to the currently poor support for GTK.</p>

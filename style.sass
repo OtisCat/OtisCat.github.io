@@ -38,13 +38,30 @@ html
 
     h1
         position: relative
-        max-width: 500px
+        max-width: 800px
         margin: 0px auto
         font-size: 50px
         text-align: center
         color: black
         padding: 25px
-        background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%)
+        line-height: 1
+
+        b
+            // background: linear-gradient(360-160deg, #d53369 0%, #daae51 100%);
+            // background: linear-gradient(360-160deg, #0700b8 0%, #00ff88 100%);
+
+    h3
+        display: inline-block
+        position: relative
+        max-width: 800px
+        margin: -30px auto 35px auto
+        font-size: 35px
+        text-align: center
+        color: black
+        padding: 5px
+        line-height: 1
+        // background: linear-gradient(360-160deg, #00d2ff 0%, #3a47d5 100%);
+        background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
 
@@ -75,9 +92,12 @@ html
 .writing
     position: relative
     width: 100vw
-    height: 100vh
+    min-height: 100vh
+    margin: 0
     display: flex
     scroll-snap-align: start
+    padding: 25vh 20vw
+
 
     .header
         position: absolute
@@ -115,11 +135,10 @@ html
             // -webkit-text-fill-color: transparent
 
     .medium-widget
-        position: absolute
-        left: 20vw
-        right: 20vw
-        bottom: 20vh
-        height: 40vh
+        position: relative
+        display: block
+        margin: 0 auto 
+        width: 100%
 
         .medium-widget-article__image
 
@@ -268,7 +287,7 @@ html
             height: 140px
 
         input[type=submit]
-            background: linear-gradient(90deg, #d53369 0%, #daae51 100%)
+            background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%)
             color: white
             border: none
             font-size: 18px

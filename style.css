@@ -54,12 +54,25 @@ html body {
 
 .frontpage h1 {
   position: relative;
-  max-width: 500px;
+  max-width: 800px;
   margin: 0px auto;
   font-size: 50px;
   text-align: center;
   color: black;
   padding: 25px;
+  line-height: 1;
+}
+
+.frontpage h3 {
+  display: inline-block;
+  position: relative;
+  max-width: 800px;
+  margin: -30px auto 35px auto;
+  font-size: 35px;
+  text-align: center;
+  color: black;
+  padding: 5px;
+  line-height: 1;
   background: -webkit-gradient(linear, left top, right top, from(#FC466B), to(#3F5EFB));
   background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
   -webkit-background-clip: text;
@@ -96,11 +109,13 @@ html body {
 .writing {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   scroll-snap-align: start;
+  padding: 25vh 20vw;
 }
 
 .writing .header {
@@ -133,11 +148,10 @@ html body {
 }
 
 .writing .medium-widget {
-  position: absolute;
-  left: 20vw;
-  right: 20vw;
-  bottom: 20vh;
-  height: 40vh;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .writing .medium-widget .medium-widget-article__image img {
@@ -313,8 +327,8 @@ html body {
 }
 
 .contact form input[type=submit] {
-  background: -webkit-gradient(linear, left top, right top, from(#d53369), to(#daae51));
-  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#FC466B), to(#3F5EFB));
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
   color: white;
   border: none;
   font-size: 18px;
