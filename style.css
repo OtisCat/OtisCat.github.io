@@ -203,9 +203,10 @@ html body {
   display: inline-block;
   width: 400px;
   height: 400px;
-  margin: 0px;
-  -webkit-box-shadow: 0px 0px 2px #ddd;
-          box-shadow: 0px 0px 2px #ddd;
+  margin: 10px;
+  -webkit-box-shadow: 0px 0px 5px #ddd;
+          box-shadow: 0px 0px 5px #ddd;
+  border-radius: 5px;
   overflow: hidden;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -215,7 +216,7 @@ html body {
   cursor: pointer;
 }
 
-.work .grid a:hover h3, .work .grid a:hover p {
+.work .grid a:hover * {
   opacity: 1;
 }
 
@@ -228,14 +229,22 @@ html body {
   width: 100%;
   height: 100%;
   background: #fff;
+  opacity: 1;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-filter: brightness(100%) blur(0px);
           filter: brightness(100%) blur(0px);
-  -webkit-transition: -webkit-filter 0.2s;
-  transition: -webkit-filter 0.2s;
-  transition: filter 0.2s;
-  transition: filter 0.2s, -webkit-filter 0.2s;
+  -webkit-transition: -webkit-filter 0.4s;
+  transition: -webkit-filter 0.4s;
+  transition: filter 0.4s;
+  transition: filter 0.4s, -webkit-filter 0.4s;
+}
+
+.work .grid a * {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  color: #333;
 }
 
 .work .grid a h3 {
@@ -243,11 +252,7 @@ html body {
   left: 40px;
   top: 10px;
   font-size: 32px;
-  color: #333;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
   width: 380px;
-  opacity: 0;
   text-align: left;
   font-family: monospace;
 }
@@ -257,12 +262,37 @@ html body {
   left: 40px;
   top: 70px;
   font-size: 18px;
-  color: #333;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
   width: 320px;
-  opacity: 0;
   text-align: left;
+}
+
+.work .grid a ul {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  bottom: 0px;
+  height: 40px;
+  white-space: nowrap;
+  list-style-type: none;
+  text-align: center;
+}
+
+.work .grid a ul li {
+  font-size: 14px;
+  display: inline;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.work .grid a ul li::after {
+  content: " \00b7";
+}
+
+.work .grid a ul li:last-child::after {
+  content: none;
 }
 
 .contact {
