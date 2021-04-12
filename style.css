@@ -234,16 +234,16 @@ html body {
      object-fit: contain;
   -webkit-filter: brightness(100%) blur(0px);
           filter: brightness(100%) blur(0px);
-  -webkit-transition: -webkit-filter 0.4s;
-  transition: -webkit-filter 0.4s;
-  transition: filter 0.4s;
-  transition: filter 0.4s, -webkit-filter 0.4s;
+/*   -webkit-transition: -webkit-filter 0.4s; */
+/*   transition: -webkit-filter 0.4s; */
+/*   transition: filter 0.4s; */
+/*   transition: filter 0.4s, -webkit-filter 0.4s; */
 }
 
 .work .grid a * {
   opacity: 0;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
+/*   -webkit-transition: opacity 0.4s; */
+/*   transition: opacity 0.4s; */
   color: #333;
 }
 
